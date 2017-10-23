@@ -88,3 +88,16 @@ footer {
     padding-top: 13px;   
     background-color: #494d4e;
 }
+
+.contslide {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel {
+    background-color: #e1e7e7;
+}
+
+.carousel-inner>.item>img {
+    height: 171px;
+}
