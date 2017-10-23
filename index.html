@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" >
   <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-theme.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>bootstrap</title>
 </head>
@@ -86,7 +87,51 @@
         </div>
     </div>
        
-    <div class="container backcolor cen"></div>
+    <div class="container backcolor">
+        <div class="container">
+            <div id="caruosel" class="carousel slide">
+            <!--Индикаторы слайдов-->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide="0"></li>
+                <li data-target="#carousel" data-slide="1"></li>
+                <li data-target="#carousel" data-slide="2"></li>
+            </ol>
+            
+            <!--Slides-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>First slide</h3>
+                        <p>description first</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Second slide</h3>
+                        <p>description second</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Third slide</h3>
+                        <p>description third</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--arrows-->
+            <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>           
+        </div>
+        </div>
+        </div>
     
     <!--Про нас-->   
     <div class="container contcont">
@@ -99,7 +144,7 @@
             <span class="text-muted"><p class="text-center">Агенство професійної безпеки "ЛЕВ"</p></span>
         </div>
     </footer>
-    <script src="jquery.js"></script>
-    <script src="javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
