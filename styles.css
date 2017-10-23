@@ -101,3 +101,20 @@ footer {
 .carousel-inner>.item>img {
     height: 171px;
 }
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left {
+    left: 75px;
+}
+
+.carousel-control.right {
+    right: 75px;
+}
+
+
+.item {
+    padding-left: 220px;
+}
