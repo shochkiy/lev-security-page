@@ -28,6 +28,14 @@ body, html {
     background-color: #abb1b1;
 }
 
+.img1 img {
+    margin-top: 25px;
+}
+
+.img2 img {
+    margin-top: 25px;
+}
+
 @media (min-width: 768px) {
     .img1 img {
         margin-top: 25px;
