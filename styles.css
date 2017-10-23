@@ -1,20 +1,15 @@
 body, html {
-    background-color: #000;
+    background-color: #bbbbbb;
 }
-
-
 
 .navbar {
     margin-bottom: 0;
     bottom: 0;
+    background-color: #494d4e; 
 }
 
 .mainimg {
     padding: 0;
-}
-
-.contnav {
-    background-color: #494d4e;
 }
 
 .backcolor {
@@ -58,6 +53,14 @@ body, html {
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+ 
+
 @media (min-width: 992px) {
     .contcont {
         max-height: 311.8px;
@@ -65,9 +68,6 @@ body, html {
     .img2 img {
         height: 311.8px; 
     }
-    .container-fluid {
-    width: 970px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -77,9 +77,6 @@ body, html {
     .img2 img {
         height: 381.25px; 
     }
-    .container-fluid {
-    width: 1170px;
-  }
 }
 
 
@@ -95,7 +92,7 @@ p {
     text-indent: 30px;
 }
 
-footer .container {
+footer {
     padding-top: 13px;   
     background-color: #494d4e;
 }
