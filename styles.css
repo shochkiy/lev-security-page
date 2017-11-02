@@ -34,7 +34,8 @@ body, html {
 }
 
 .navbar-brand {
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
+    
 }
 
 .logo {
@@ -119,4 +120,55 @@ h4 {
 .slideitem {
     margin: auto;
     padding: 0 1% 1% 1%;
+}
+
+@media (min-width: 992px) {
+    .contactsimg {
+    margin-left: 41.875px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contactsimg {
+    margin-left: 50px;
+    }
+}
+
+@media (max-width: 460px) {
+    .contactsimg {
+    margin-left: 0;
+    }
+    .contactsfluid {
+        margin-left: 20px;
+    }
+}
+
+.contacts {
+    height: auto;
+}
+
+.inner1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactsimg {
+    height: 50px;
+}
+.contacts .outer .inner {
+    margin-bottom: 20px;
+}
+
+.mail {
+    margin-top: 6%;
+}
+
+.map {
+    height: 400px;
+    margin: 10px 0;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
 }
