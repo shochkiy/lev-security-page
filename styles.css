@@ -8,6 +8,39 @@ body, html {
     background-color: #494d4e; 
 }
 
+.navbar .navbar-nav > li > a {
+    color: #e1e7e7;
+}
+.navbar .navbar-nav > li > a:hover {    
+    background-color: #494d4e;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-nav li {
+        float: none;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .navbar-nav li:hover{
+        text-decoration: underline;
+        background-color: none;
+    }
+}
+
+.navbar-brand {
+    padding: 5px;
+}
+
+.logo {
+    height: 100%;
+}
+
 .mainimg {
     padding: 0;
 }
@@ -20,14 +53,13 @@ body, html {
     height: 50px;
 }
 
-.text-center {
-    margin-bottom: 20px;
-}
-
 .contcont {
     background-color: #abb1b1;
 }
 
+.contacts {
+    background-color: #e1e7e7;
+}
 
 .opis {
     margin-top: 15px; 
@@ -52,7 +84,7 @@ footer {
 }
 
 .item {
-    background-color: #abb1b1;
+    background-color: #e1e7e7;
 }
 
 .icon-bar {
@@ -86,5 +118,5 @@ h4 {
 
 .slideitem {
     margin: auto;
-    padding: 1%;
+    padding: 0 1% 1% 1%;
 }
