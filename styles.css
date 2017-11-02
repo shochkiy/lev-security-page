@@ -11,7 +11,8 @@ body, html {
 .navbar .navbar-nav > li > a {
     color: #e1e7e7;
 }
-.navbar .navbar-nav > li > a:hover {    
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus{    
     background-color: #494d4e;
     text-decoration: underline;
 }
