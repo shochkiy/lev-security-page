@@ -1,10 +1,10 @@
 <?php
  
 /* Задаем переменные */
-$name = htmlspecialchars($_GET["name"]);
-$email = htmlspecialchars($_GET["email"]);
-$tema = htmlspecialchars($_GET["tema"]);
-$message = htmlspecialchars($_GET["message"]);
+$name = htmlspecialchars($_POST["name"]);
+$email = htmlspecialchars($_POST["email"]);
+$tema = htmlspecialchars($_POST["tema"]);
+$message = htmlspecialchars($_POST["message"]);
  
 /* Ваш адрес и тема сообщения */
 $address = "dmitriy.sotskiy@gmail.com";
@@ -19,7 +19,7 @@ $message";
  
  
 /* Отправляем сообщение, используя mail() функцию */
-$from  = "Reply-To: $email \r\n";
+$from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
 if (mail($address, $sub, $mes, $from)) {
  header('Refresh: 30; URL=http://localhost/shochkiy.github.io/contacts.html');
  echo '<head>
@@ -31,7 +31,3 @@ else {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY</body>';}
 ?>
-
-
-Warning: mail(): SMTP server response: 553 We do not relay non-local mail, sorry. in E:\xampp\htdocs\shochkiy.github.io\contacts-form.php on line 23
-Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY
