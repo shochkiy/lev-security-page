@@ -23,6 +23,20 @@ body, html {
     float: left;
 }
 
+.langlink {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.l1 {    
+    margin-left: 15px;
+}
+
+.ul1 {
+    margin-top: -10px;
+}
+
 @media (min-width: 768px) {
     .navbar-nav {
         text-align: center;
@@ -40,12 +54,12 @@ body, html {
     .navbarcent {
     margin-left: 18%;
     }
-}
-
-.langlink {
-    float: left;
-    padding-left: 0;
-    padding-right: 0;
+    .langlink {
+        margin-left: 0;
+    }
+    .ul1 {
+        margin-top: 0;
+    }
 }
 
 .langlink img {
@@ -144,17 +158,6 @@ footer {
     background-color: #494d4e;
 }
 
-.contitem {
-    max-height: 300px;
-}
-
-.contslide {
-    padding: 0;
-}
-
-.item {
-    background-color: #e1e7e7;
-}
 
 .icon-bar {
     background-color: #abb1b1;
@@ -164,31 +167,12 @@ h4 {
     margin-top: 10px;
 }
 
-@media (max-width: 767px) {
-    .col-sm-offset-2 img {
-        margin: auto;
-    }
-    .inner {
-        display: none;
-    }
-}
-
 .container-fluid {
         padding: 10px 0; 
     }
 
-@media (min-width: 768px) {
-    
-    .inner {
-        margin-top: 7%;
-    }
-}
 
-
-.slideitem {
-    margin: auto;
-    padding: 0 1% 1% 1%;
-}
+/********************CONTACTS*********************/
 
 .inner1 {
     margin-top: 10px;
@@ -248,4 +232,111 @@ h4 {
 #map {
     height: 100%;
     width: 100%;
+}
+
+/********************SLIDER*********************/
+.outer-slider {
+    position: relative;
+    display: block;
+}
+
+.controls {
+    position: absolute;
+      width: 100%;
+      top: 50%;
+      height: auto;
+      pointer-events: none;
+      z-index: 2;
+}
+
+.arrow {
+        position: absolute;
+        -webkit-transform: translateY(-50%) scale(1);
+        -ms-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+        -webkit-transition: -webkit-transform 0.1s ease-out;
+        transition: -webkit-transform 0.1s ease-out;
+        -o-transition: transform 0.1s ease-out;
+        transition: transform 0.1s ease-out;
+        transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out; 
+}
+
+.arrow:hover {
+          -webkit-transform: translateY(-50%) scale(1.1);
+          -ms-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1); 
+}
+
+.arrow:active {
+          -webkit-transform: translateY(-50%) scale(1);
+          -ms-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1); 
+}
+#arrleft {
+          left: 10px;
+          pointer-events: auto; 
+}
+#arrright {
+          right: 10px;
+          pointer-events: auto; 
+}
+
+.slider {
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #e1e7e7;
+}
+
+.owl-dots {
+    display: none;
+}
+.slider-inner {
+    margin-right: 90px;
+    margin-left: 90px; 
+}
+
+.owl-carousel img {
+    background-color: #abb1b1;
+    border-radius: 20px;
+}
+
+
+
+
+
+/********************CONTACTS FILE*********************/
+.map1 {
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+}
+
+.contactscont {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contactsh3 {
+    margin-left: 45px;
+}
+
+.contactsbtn {
+    border-radius: 0px;
+    background: #f7b332;
+    border: 0;
+    color: #e1e6e6;
+    height: 40px;
+    width: 100px;
+    text-shadow: none;
+}
+
+.contform {
+    background-color: #abb1b1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group, .form-control {
+    border-radius: 0px;
 }

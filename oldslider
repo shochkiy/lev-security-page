@@ -1,0 +1,113 @@
+
+<div class="container contslide">
+        <div id="carousel" class="carousel slide">
+                    <!--Индикаторы слайдов-->
+           <!-- <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol> -->
+            
+            <!--Slides-->
+            <div class="carousel-inner">
+                <div class="item active">
+                     <div class="container contitem">
+                        <div class="row slideitem">
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <a href="http://www.konkord.biz/uk-ua/">
+                                    <img src="images/logo/2.png" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-sm-5 inner">
+                                <div class="container">
+                                    <h3><a href="http://www.konkord.biz/uk-ua/">«Конкорд-Гей»</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="item">
+                    <div class="container contitem">
+                        <div class="row slideitem">
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <a href="http://mdvir.com/">
+                                    <img src="images/logo/3.png" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-sm-5 inner">
+                                <div class="container">
+                                    <h3><a href="http://mdvir.com/">Ресторанно-готельний<br>комплекс <br>«МИСЛИВСЬКИЙ ДВІР»</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="item">
+                     <div class="container contitem">
+                        <div class="row slideitem">
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <a href="http://ukrtehspetsbud.com.ua/about.html">
+                                    <img src="images/logo/4.png" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-sm-5 inner">
+                                <div class="container">
+                                    <h3><a href="http://ukrtehspetsbud.com.ua/about.html">«ІБК»Укртехспецбуд-ТД»</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="item">
+                     <div class="container contitem">
+                        <div class="row slideitem">
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <a href="http://www.ptax.pat.ua/"><img src="images/logo/5.png" alt="" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-5 inner">
+                                <div class="container">
+                                    <h3><a href="http://www.ptax.pat.ua/"> "ПТАХОКОМБІНАТ<br>"БЕРШАДСЬКИЙ"</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="item">
+                     <div class="container contitem">
+                        <div class="row slideitem">
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <a href="http://terravita.kiev.ua/ua/about"><img src="images/logo/6.png" alt="" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-5 inner">
+                                <div class="container">
+                                    <h3><a href="http://terravita.kiev.ua/ua/about">«ТерраВіта Україна»</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="item">
+                     <div class="container contitem">
+                        <div class="row slideitem">
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <a href="http://zzbk1.ua/"><img src="images/logo/7.png" alt="" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-5 inner">
+                                <div class="container">
+                                    <h3><a href="http://zzbk1.ua/">«ЗАВОД<br>ЗАЛІЗОБЕТОННИХ<br> КОНСТРУКЦІЙ №1»</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            
+            <!--arrows-->
+            <a href="#carousel" class="left carousel-control noback" data-slide="prev" style="background-image: none;">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel" class="right carousel-control noback" data-slide="next" style="background-image: none;">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>     
+        </div>
+    </div>
+    </div>

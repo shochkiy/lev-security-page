@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lev Security</title>  
+</head>
+
+
+
+<body>
+    <!--Навигация-->
+    <div class="navbar navbar-fixed-top">
+        <div class="container contnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responisve-menu">
+                    <span class="sr-only">Открыть навигацию</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="images/svg/LEV_logo.svg" alt="" class="img-responsive logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="responisve-menu">
+                <ul class="nav navbar-nav navbarcent">
+                    <li  class="menulink"><a href="">Головна</a></li>
+                    <li  class="menulink"><a href="">Наші послуги</a></li>
+                    <li  class="menulink"><a href="">Вакансії</a></li>
+                    <li  class="menulink"><a href="">Контакти</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ul1">
+                    <li>
+                        <a href="index.html" class="langlink l1" style="padding: 15px 2px;"><img src="images/svg/flag_ua.svg" alt=""></a>
+                        <a href="index-ru.html" class="langlink" style="padding: 15px 0;"><img src="images/svg/flag_ru.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container map1">
+          <div id="map"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT5D5ze3vK34rL5U_musbVVKaVETfGsP4&callback=initMap"
+                async defer></script>
+    </div>
+    
+    
+    <div class="container contacts">
+        <div class="row outer">
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                <div class="container-fluid contactsfluid">
+                    <div class="container-fluid contactscont">
+                        <h3 class="contactsh3">Cпецпідрозділ "ЛЕВ"<br>Агенство професійної<br> безпеки</h3>
+                    </div>
+                    <div class="row inner1">
+                        <div class="col-xs-3">
+                            <img src="images/svg/smartphone.svg" alt="" class="img-responsive contactsimg">
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="text-left">+38(096)123-45-67</p>
+                            <p class="text-left">+38(096)123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="row inner1">
+                        <div class="col-xs-3">
+                            <img src="images/svg/map.svg" alt="" class="img-responsive contactsimg">
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="text-left">02105, м. Київ, вул. Ревуцького 1, оф. 1</p>
+                        </div>
+                    </div>
+                    <div class="row inner1">
+                        <div class="col-xs-3">
+                            <img src="images/svg/mail.svg" alt="" class="img-responsive contactsimg">
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="text-left mail">dmitriy.sotskiy@gmail.com</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <div class="container-fluid contform">
+                    <h3 class="text-center">Зворотній зв'язок</h3>
+                    <h5 class="text-muted text-center">Всі поля обов'язкові для заповнення</h5>
+                    <form class="form">
+                             <div class="col-xs-12">
+                             <div class="form-group">
+                             <label class="lblform">Як вас звати?</label>
+                             <input type="text" class="form-control" />
+                             </div>
+                             </div>
+                             <div class="col-xs-12">
+                             <div class="form-group">
+                              <label class="lblform">Контакти</label>
+                             <input type="text" class="form-control" />
+                             </div>
+                             </div>
+                             <div class="col-xs-12">
+                             <div class="form-group">
+                              <label class="lblform">Тема питання</label>
+                             <input type="text" class="form-control" />
+                             </div>
+                             </div>
+                             <div class="col-xs-12">
+                             <div class="form-group">
+                              <label class="lblform">Коментар</label>
+                                 <textarea class="form-control" rows="4"></textarea>
+                             </div>
+                             </div>
+                             <div class="text-center col-xs-12">
+                             <input type="button" class="btn btn-default contactsbtn" value="Надіслати" />
+                             </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer class="footer">
+       <div class="container">
+            <span class="text-muted"><p class="text-center">Агенство професійної безпеки "ЛЕВ"</p></span>
+       </div>
+    </footer>
+       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="main.js"></script>
+</body>
+</html>
