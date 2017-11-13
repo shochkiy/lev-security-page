@@ -13,13 +13,24 @@ body, html {
 .navbar .navbar-nav > li > a{
     color: #e1e7e7;
 }
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus{    
+.navbar .navbar-nav > li > .plinkmenu:hover,
+.navbar .navbar-nav > li > .plinkmenu:focus{    
     border-bottom: 1px solid white;
     background-color: #494d4e;
 }
 
-.active {
+.navbar .navbar-nav > li > .langlink:hover,
+.navbar .navbar-nav > li > .langlink:focus{  
+    background-color: #494d4e;
+}
+
+.navbar .navbar-nav > li > .langlink > img:hover,
+.navbar .navbar-nav > li > .langlink > img:focus{  
+    border-bottom: 1px solid white;
+    background-color: #494d4e;
+}
+
+.active1 {
     border-bottom: 1px solid white;
 }
 
