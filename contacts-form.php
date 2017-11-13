@@ -1,33 +1,31 @@
-<?php
+<?php 
  
-/* Задаем переменные */
-$name = htmlspecialchars($_POST["name"]);
-$email = htmlspecialchars($_POST["email"]);
-$tema = htmlspecialchars($_POST["tema"]);
-$message = htmlspecialchars($_POST["message"]);
+$sendto   = "dmitriy.sotskiy@gmail.com"; // почта, на которую будет приходить письмо
+$username = htmlspecialchars($_POST['name']);   // сохраняем в переменную данные полученные из поля c именем
+$email = htmlspecialchars($_POST['email']); // сохраняем в переменную данные полученные из поля c телефонным номером
+$tema = htmlspecialchars($_POST['tema']); // сохраняем в переменную данные полученные из поля c адресом электронной почты
+$message = htmlspecialchars($_POST['message']);
  
-/* Ваш адрес и тема сообщения */
-$address = "dmitriy.sotskiy@gmail.com";
-$sub = "Сообщение с сайта ХХХ";
+// Формирование заголовка письма
+$subject  = "Новое сообщение";
+$headers  = "From: " . strip_tags($email) . "\r\n";
+$headers .= "Reply-To: ". strip_tags($email) . "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=windows-1251 \r\n";
  
-/* Формат письма */
-$mes = "Сообщение с сайта ХХХ.\n
-Имя отправителя: $name 
-Электронный адрес отправителя: $email
-Текст сообщения:
-$message";
+// Формирование тела письма
+$msg  = "<html><body style='font-family:Arial,sans-serif;'>";
+$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Cообщение с сайта</h2>\r\n";
+$msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
+$msg .= "<p><strong>Почта:</strong> ".$email."</p>\r\n";
+$msg .= "<p><strong>Тема:</strong> ".$tema."</p>\r\n";
+$msg .= "<p><strong>Текст повідомлення:</strong> ".$message."</p>\r\n";
+$msg .= "</body></html>";
  
- 
-/* Отправляем сообщение, используя mail() функцию */
-$from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
-if (mail($address, $sub, $mes, $from)) {
- header('Refresh: 30; URL=http://localhost/shochkiy.github.io/contacts.html');
- echo '<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу XXX</body>';}
-else {
- header('Refresh: 30; URL=http://localhost/shochkiy.github.io/contacts.html');
- echo '<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY</body>';}
+// отправка сообщения
+if(@mail($sendto, $subject, $msg, $headers)) {
+    echo "<center>Відправлено</center>";
+} else {
+    echo "<center>Не відправлено</center>";
+}
 ?>

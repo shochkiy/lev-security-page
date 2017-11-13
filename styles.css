@@ -88,7 +88,7 @@ body, html {
 
 /*MAINIMG*/
 
-.mainimg {
+.mainimg, .mainimgvac, .map1 {
     margin-top: 50px;
     padding: 0;
 }
@@ -101,25 +101,29 @@ body, html {
     margin-left: 0;
     margin-right: 0;
 }
+.mainimg {
+    background-image: url(images/svg/FON.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+.mainimg2 {
+    margin-top: 8%;
+    margin-bottom: 8%;   
+    margin: 0;
+    padding: 3%;
+    }
+.mainimg3 {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin: 0;
+    padding: 3%;
+    }
 
-@media (min-width: 768px) {
-    .mainimg {
-        background-image: url(images/main-img.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .mainimg2 {
-        margin-top: 6%;
-        margin-bottom: 6%;   
-        margin: 0;
-    }
-    .mainimg3 {
-        margin-top: 6%;
-        margin-bottom: 6%;
-        margin: 0;
+@media (max-width: 767px) {
+    .mainimg2, .mainimg3 {
+        margin: auto;
     }
 }
-
 /**/
 
 
@@ -339,4 +343,49 @@ h4 {
 
 .form-group, .form-control {
     border-radius: 0px;
+}
+
+
+/********************VACANCIES FILE*********************/
+.mainimgvac {
+    height: 500px;
+    background-image: url(images/svg/FON_V.png);
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .mainimgvac {
+        height: 300px;
+    }
+}
+
+
+/********************FONTS*********************/
+@font-face {
+    font-family: Arsenal-Bold;
+    src: url(fonts/Arsenal-Bold.otf);
+}
+.pvacancies {
+    text-decoration: underline;
+    color: white;
+    font-family: Arsenal-Bold;
+    font-size: 64pt;
+    position: absolute;
+    top: 50%;
+    margin-top: -60.5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .pvacancies {
+        font-size: 48pt;
+    }
+}
+
+@font-face {
+    font-family: Arsenal-Italic;
+    src: url(fonts/Arsenal-Italic.otf);
 }
