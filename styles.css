@@ -106,17 +106,14 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     }
-.mainimg2 {
-    margin-top: 8%;
-    margin-bottom: 8%;   
+.mainimg2 {  
     margin: 0;
-    padding: 3%;
+    padding: 3%;    
     }
 .mainimg3 {
-    margin-top: 8%;
-    margin-bottom: 8%;
     margin: 0;
     padding: 3%;
+    padding-top: 8%;
     }
 
 @media (max-width: 767px) {
@@ -152,6 +149,9 @@ body, html {
     margin-top: 15px; 
 }
 
+.opis > .container-fluid {
+    padding-top: 0px;
+}
 
 .maindisc {
     text-indent: 30px;
@@ -195,6 +195,7 @@ h4 {
 @media (min-width: 992px) {
     .contactsimg {
     margin-left: 30px;
+    color: #262727;
     }
 }
 
@@ -207,9 +208,6 @@ h4 {
 @media (max-width: 460px) {
     .contactsimg {
     margin-left: 0;
-    }
-    .contactsfluid {
-        margin-left: 20px;
     }
 }
 
@@ -239,6 +237,7 @@ h4 {
 }
 
 /********************SLIDER*********************/
+
 .outer-slider {
     position: relative;
     display: block;
@@ -263,6 +262,7 @@ h4 {
         -o-transition: transform 0.1s ease-out;
         transition: transform 0.1s ease-out;
         transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out; 
+        color: #262727;
 }
 
 .arrow:hover {
@@ -348,16 +348,33 @@ h4 {
 
 /********************VACANCIES FILE*********************/
 .mainimgvac {
-    height: 500px;
+    height: 300px;
     background-image: url(images/svg/FON_V.png);
     background-size: cover;
     position: relative;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
     .mainimgvac {
-        height: 300px;
+        height: 287px;
     }
+}
+
+@media (min-width: 992px) {
+    .mainimgvac {
+        height: 371.172px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainimgvac {
+        height: 447.703px;
+    }
+}
+
+.vactext {
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -379,13 +396,63 @@ h4 {
     margin-right: auto;
 }
 
+.articles {
+    font-family: Arsenal-Bold;
+    font-size: 36pt;
+    color: #262727;
+}
+
 @media (max-width: 767px) {
     .pvacancies {
         font-size: 48pt;
     }
+    
+    .articles {
+    font-family: Arsenal-Bold;
+    font-size: 26pt;
+}
 }
 
 @font-face {
-    font-family: Arsenal-Italic;
-    src: url(fonts/Arsenal-Italic.otf);
+    font-family: Arsenal-Regular;
+    src: url(fonts/Arsenal-Regular.otf);
+}
+
+.plinkmenu {
+    font-family: Arsenal-Regular;
+    font-size: 12pt;
+}
+
+.subarticles {
+    font-family: Arsenal-Regular;
+    font-size: 25pt;
+    color: #262727;
+}
+
+.alltext {
+    font-family: Arsenal-Regular;
+    font-size: 14pt;
+    color: #262727;
+}
+
+.alltext12 {
+    font-family: Arsenal-Regular;
+    font-size: 14pt;
+    color: #262727;
+}
+
+@media (max-width: 768px) {
+    .subarticles {
+    font-family: Arsenal-Regular;
+    font-size: 17pt;
+    }
+    .alltext {
+    font-family: Arsenal-Regular;
+    font-size: 10pt;
+    }
+
+    .alltext12 {
+    font-family: Arsenal-Regular;
+    font-size: 8pt;
+    }
 }
