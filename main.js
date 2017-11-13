@@ -9,7 +9,7 @@ var map;
                         map: map,
                         icon: {
                             url: "images/svg/geolocalizator.svg",
-                            scaledSize: new google.maps.Size(64, 64)
+                            scaledSize: new google.maps.Size(42, 42)
 	                    }
                 });
 }

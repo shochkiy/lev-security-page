@@ -15,8 +15,12 @@ body, html {
 }
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus{    
+    border-bottom: 1px solid white;
     background-color: #494d4e;
-    text-decoration: underline;
+}
+
+.active {
+    border-bottom: 1px solid white;
 }
 
 .langa {
@@ -27,6 +31,14 @@ body, html {
     float: left;
     padding-left: 0;
     padding-right: 0;
+}
+
+.langlink img {
+    padding-bottom: 3px;
+}
+
+.activeimg {
+    border-bottom: 1px solid white;
 }
 
 .l1 {    
@@ -44,12 +56,6 @@ body, html {
     .navbar-nav .menulink {
         float: none;
         display: inline-block;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .navbar-nav li:hover{
-        text-decoration: underline;
-        background-color: none;
     }
     .navbarcent {
     margin-left: 18%;
@@ -67,7 +73,7 @@ body, html {
 }
 
 .navbar-brand {
-    padding: 5px 5px 5px 15px;
+    padding: 5px 10px 5px 30px;
     
 }
 
@@ -88,14 +94,11 @@ body, html {
 
 /*MAINIMG*/
 
-.mainimg, .mainimgvac, .map1 {
+.mainimg, .mainimgvac, .map1, .os {
     margin-top: 50px;
     padding: 0;
 }
 
-@media (min-width: 768px) {
-    margin-top: 52px;
-}
 
 .mainrow {
     margin-left: 0;
@@ -112,8 +115,7 @@ body, html {
     }
 .mainimg3 {
     margin: 0;
-    padding: 3%;
-    padding-top: 8%;
+    padding: 8% 3% 8% 3%;
     }
 
 @media (max-width: 767px) {
@@ -138,11 +140,13 @@ body, html {
 }
 
 .contcont {
-    background-color: #abb1b1;
+    background-color: #e1e7e7;
+    padding: 0 30px;
 }
 
 .contacts {
     background-color: #e1e7e7;
+    padding: 10px 30px 20px 30px;
 }
 
 .opis {
@@ -216,7 +220,7 @@ h4 {
 }
 
 .contactsimg {
-    height: 50px;
+    height: 42px;
 }
 .contacts .outer .inner {
     margin-bottom: 20px;
@@ -236,7 +240,19 @@ h4 {
     width: 100%;
 }
 
+.indcontacts {
+    background-color: #abb1b1;
+}
+
+.tell {
+    min-width: 240px;
+}
+
+
 /********************SLIDER*********************/
+.slider {
+    padding: 0 30px;
+}
 
 .outer-slider {
     position: relative;
@@ -286,8 +302,6 @@ h4 {
 }
 
 .slider {
-    padding-right: 0;
-    padding-left: 0;
     background-color: #e1e7e7;
 }
 
@@ -297,6 +311,10 @@ h4 {
 .slider-inner {
     margin-right: 90px;
     margin-left: 90px; 
+}
+
+.arrow img {
+    height: 42px;
 }
 
 
@@ -332,7 +350,7 @@ h4 {
 .contform {
     background-color: #abb1b1;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-group, .form-control {
@@ -370,6 +388,40 @@ h4 {
     width: 100%;
     margin: auto;
 }
+
+/********************OUR SERVICES FILE*********************/
+.os {
+    height: 300px;
+    background-image: url(images/svg/FON_S.png);
+    background-size: cover;
+    
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .os {
+        height: 287px;
+    }
+}
+
+@media (min-width: 992px) {
+    .os {
+        height: 371.172px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .os {
+        height: 447.703px;
+    }
+}
+
+.rowservices {
+    padding-top: 20px;
+}
+
+
+
 
 
 /********************FONTS*********************/
@@ -449,4 +501,8 @@ h4 {
     font-family: Arsenal-Regular;
     font-size: 8pt;
     }
+}
+
+textarea {
+    resize: vertical;
 }
